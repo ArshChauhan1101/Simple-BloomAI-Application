@@ -1,7 +1,7 @@
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/bigscience/bloom"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer API"}
 
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
